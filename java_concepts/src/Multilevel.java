@@ -18,6 +18,7 @@ class Cuboid{
     static String colour(){
         return "Blue";
     }
+    static String colour(int a){return "Green";}
 }
 
 class WeightOfCuboid extends Cuboid{
@@ -42,5 +43,7 @@ public class Multilevel {
         System.out.println("Cost: " + obj1.weight);
         System.out.println("Cost: " + obj1.cost);
         System.out.println("Color: " + Cuboid.colour());
+        System.out.println(obj1.colour());
+        System.out.println(Cuboid.colour(2));
     }
 }
